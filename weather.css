@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'open sans',sans-serif;
+    background: #256;
+    background-image: url('https://unsplash.com/s/photos/nature');
+
+}
+
+.card {
+    background: darkslategrey;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+button:hover{
+    background: #7c7c7c6b;
+}
+h1.temp{
+    margin: 0;
+    margin-bottom: 0.4em;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+.description{
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+.weather.loading:after{
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
